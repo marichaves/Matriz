@@ -24,21 +24,32 @@ public class MatrizesArraysMultidimensionais {
 		notasAlunos[2][2] = 3.6;
 		notasAlunos[2][3] = 9.9;
 
+//		for (int i = 0; i < notasAlunos.length; i++) {
+//			// System.out.println(notasAlunos[i]);
+//			for (int j = 0; j < notasAlunos[i].length; j++) {
+//				System.out.print(notasAlunos[i][j] + " - ");
+//			}
+//			System.out.println();
+//		}
+//		notasAlunos[0][3] = 6.6; // alterei uma nota
+//		System.out.println();
+//		for (int i = 0; i < notasAlunos.length; i++) {
+//			// System.out.println(notasAlunos[i]);
+//			for (int j = 0; j < notasAlunos[i].length; j++) {
+//				System.out.println(notasAlunos[i][j] + "");
+//			}
+//			System.out.println();
+//		}
+		// Media:
+
+		System.out.println("Calculando a média de cada aluno: ");
+		double soma;
 		for (int i = 0; i < notasAlunos.length; i++) {
-			// System.out.println(notasAlunos[i]);
+			soma = 0;
 			for (int j = 0; j < notasAlunos[i].length; j++) {
-				System.out.print(notasAlunos[i][j] + " - ");
+				soma += notasAlunos[i][j];
 			}
-			System.out.println();
-		}
-		notasAlunos[0][3] = 6.6;
-		System.out.println();
-		for (int i = 0; i < notasAlunos.length; i++) {
-			// System.out.println(notasAlunos[i]);
-			for (int j = 0; j < notasAlunos[i].length; j++) {
-				System.out.println(notasAlunos[i][j] + "");
-			}
-			System.out.println();
+			System.out.println("MÉdia do aluno " + (i +1) + " é = " + (soma/4));
 		}
 
 	}
