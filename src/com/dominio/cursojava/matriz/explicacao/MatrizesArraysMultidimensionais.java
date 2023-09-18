@@ -27,6 +27,15 @@ public class MatrizesArraysMultidimensionais {
 		for (int i = 0; i < notasAlunos.length; i++) {
 			// System.out.println(notasAlunos[i]);
 			for (int j = 0; j < notasAlunos[i].length; j++) {
+				System.out.print(notasAlunos[i][j] + " - ");
+			}
+			System.out.println();
+		}
+		notasAlunos[0][3] = 6.6;
+		System.out.println();
+		for (int i = 0; i < notasAlunos.length; i++) {
+			// System.out.println(notasAlunos[i]);
+			for (int j = 0; j < notasAlunos[i].length; j++) {
 				System.out.println(notasAlunos[i][j] + "");
 			}
 			System.out.println();
